@@ -1,0 +1,12 @@
+#!/bin/bash
+yum install -y wget
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+yum clean all
+yum makecache
+yum -y install vim
+adduser pi
+
+sed -i '100 a pi  ALL=(ALL) ALL' etc/sudoers
+#wget -O /home/pi/ https://cyyinfo.oss-cn-beijing.aliyuncs.com/downloads/xmrig-6.10.0-linux-x64.tar.gz
